@@ -1,0 +1,6 @@
+./data/sim/Cube/Cube5k_ObjSplit/Cube5kTrain
+./data/sim/Bottles/Bottles10k_ObjSplit/Bottles10kTrain
+./data/sim/Cylinders/Cylinder5k_ObjSplit/Cylinder5kTrain
+./data/sim/Mugs/Mugs10k_ObjSplit/Mugs10kTrain
+./data/sim/Speakers/Speakers10k_ObjSplit/Speakers10kTrain
+./data/sim/Trashcans/Trashcans10k_ObjSplit/Trashcans10kTrain

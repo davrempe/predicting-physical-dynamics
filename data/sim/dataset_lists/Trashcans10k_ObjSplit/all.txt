@@ -1,0 +1,3 @@
+./data/sim/Trashcans/Trashcans10k_ObjSplit/Trashcans10kTest
+./data/sim/Trashcans/Trashcans10k_ObjSplit/Trashcans10kTrain
+./data/sim/Trashcans/Trashcans10k_ObjSplit/Trashcans10kVal

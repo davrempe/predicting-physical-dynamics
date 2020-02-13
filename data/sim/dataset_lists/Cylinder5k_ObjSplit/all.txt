@@ -1,0 +1,3 @@
+./data/sim/Cylinders/Cylinder5k_ObjSplit/Cylinder5kTest
+./data/sim/Cylinders/Cylinder5k_ObjSplit/Cylinder5kTrain
+./data/sim/Cylinders/Cylinder5k_ObjSplit/Cylinder5kVal

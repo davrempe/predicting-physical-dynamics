@@ -1,0 +1,1 @@
+./data/sim/Trashcans/Trashcans10k_ObjSplit/Trashcans10kTrain

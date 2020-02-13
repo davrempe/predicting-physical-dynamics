@@ -1,0 +1,1 @@
+./data/sim/Bottles/Bottles10k_ObjSplit/Bottles10kTest

@@ -1,0 +1,3 @@
+./data/sim/Bottles/Bottles10k_ObjSplit/Bottles10kTest
+./data/sim/Bottles/Bottles10k_ObjSplit/Bottles10kTrain
+./data/sim/Bottles/Bottles10k_ObjSplit/Bottles10kVal

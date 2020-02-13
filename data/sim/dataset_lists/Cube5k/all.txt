@@ -1,0 +1,3 @@
+./data/sim/Cube/Cube5k_ObjSplit/Cube5kTrain
+./data/sim/Cube/Cube5k_ObjSplit/Cube5kTest
+./data/sim/Cube/Cube5k_ObjSplit/Cube5kVal

@@ -1,0 +1,6 @@
+./data/sim/Cube/Cube5k_ObjSplit/Cube5kTest
+./data/sim/Bottles/Bottles10k_ObjSplit/Bottles10kTest
+./data/sim/Cylinders/Cylinder5k_ObjSplit/Cylinder5kTest
+./data/sim/Mugs/Mugs10k_ObjSplit/Mugs10kTest
+./data/sim/Speakers/Speakers10k_ObjSplit/Speakers10kTest
+./data/sim/Trashcans/Trashcans10k_ObjSplit/Trashcans10kTest

@@ -1,0 +1,3 @@
+./data/sim/Speakers/Speakers10k_ObjSplit/Speakers10kTest
+./data/sim/Speakers/Speakers10k_ObjSplit/Speakers10kTrain
+./data/sim/Speakers/Speakers10k_ObjSplit/Speakers10kVal

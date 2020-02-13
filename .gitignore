@@ -1,0 +1,10 @@
+*.pyc
+*.zip
+log
+data/sim/Bottles
+data/sim/Cube
+data/sim/Cylinders
+data/sim/Mugs
+data/sim/Speakers
+data/sim/Trashcans
+pretrained/pointnet_cls*

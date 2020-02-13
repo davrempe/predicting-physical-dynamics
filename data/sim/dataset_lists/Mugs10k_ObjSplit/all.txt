@@ -1,0 +1,3 @@
+./data/sim/Mugs/Mugs10k_ObjSplit/Mugs10kTest
+./data/sim/Mugs/Mugs10k_ObjSplit/Mugs10kTrain
+./data/sim/Mugs/Mugs10k_ObjSplit/Mugs10kVal
