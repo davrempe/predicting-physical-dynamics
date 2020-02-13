@@ -4,14 +4,19 @@
 
 Davis Rempe, Srinath Sridhar, He Wang, Leonidas J. Guibas
 
+![Teaser](dynamics.png)
 
-This repository contains the code and dataset used in the paper "Predicting the Physical Dynamics of Unseen 3D Objects" presented at WACV 2020.
+This repository contains the code and dataset used in the paper "Predicting the Physical Dynamics of Unseen 3D Objects" presented at WACV 2020. See the [project page](https://geometry.stanford.edu/projects/learningdynamicsWACV2020/).
 
 ## Setup
-Structure.
+This code has been tested on Ubuntu 16.04 using Python 2.7 and Tensorflow 1.13.1 with CUDA 10.0.
 
-Setup. Only tested on Ubuntu 16.04 using Tensorflow 1.13.1
+Downloads.
 
+## Structure
+Example configs.
+
+## Running
 Train command.
 
 `python scripts/train/topple_aa_train_classify.py @./data/configs/Cube5k.train.cfg`
