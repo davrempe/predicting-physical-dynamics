@@ -14,3 +14,13 @@ This example is specifically for the _Cube_ dataset, but is easily modified for 
 ### Train and Test Configurations
 
 Example training and testing configurations are contained in the `configs` directory. These are simply files containing all flags to be passed into the training and testing scripts. It is straightforward to modify these example configurations for different datasets or to change various parameters.
+
+For training, the commands that will change between datasets are `--data_list` and `--norm_info` flags which are configured differently for each dataset as explained above. The rest are self-explanatory.
+
+For testing, the flags determine which evaluations are performed:
+* `--test_single_step` calculates _single step_ errors for the predicted sequences.
+* `--test_roll_out` calculates _roll-out_ errors for the predicted sequences.
+* `--test_topple_classify` evaluates the topple classification accuracy for the predicted sequences.
+* `--output_pred` will save the predicted sequences to .json files which can later be visualized with Unity as [explained in the README](https://github.com/davrempe/predicting-physical-dynamics).
+
+Please see the main paper for a description of each of the metrics.
