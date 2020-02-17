@@ -20,23 +20,28 @@ In order to run the code, you must download and place a few things in the repo:
 * If you want to visualize results, you will need to download the shape meshes [here](https://drive.google.com/open?id=1YWrgi6Uw7G0jqVu36BvJETjWcXGe0DaM). They should be placed in `viz_unity/DataIn`.
 
 ## Structure
-Data explanation and example configs.
-
-Unity project.
+The important parts of this repository are as follows:
+* `data` is where simulated data for training/testing should be placed. Additionally, it already contains all configuration files needed to properly load and use the dataset. Please see the [data readme](data) for more information.
+* `scripts` contains all code pertaining to our method including training and testing scripts and models. See below for instructions to run these scripts.
+* `viz_unity` contains a [Unity3D](https://unity.com/) project that can be used to visualize results. See below for instructions to use this project.
 
 ## Running
 Below are directions to train, test, and visualize results from our method.
 
 ### Training and Testing
-Train command.
+To train our model, use a command similar to:
 
 `python scripts/train/topple_aa_train_classify.py @./data/configs/Cube5k.train.cfg`
 
-Test command.
+where all flags for training are passed in via the given configuration file after `@`. To see the possible options for training and understand the configuration file please see the [data readme](data). The command for training our model on any datset is more or less the same, the only differences being the `--data_list` and `--norm_info` flags which are configured differently for each dataset.
+
+To test the trained model, use the command:
 
 `python scripts/test/topple_aa_test_classify.py @./data/configs/Cube5k.test.cfg`
 
-If you run into issues with pickle, may need to regenerate some preprocessing done on the data. For example for the cube data run:
+Similar to the train command, all flags are contained in the configuration file. Different evaluations are performed based on the given flags; see the [data readme](data) for full details.
+
+If running into issues with pickle, you may need to regenerate some preprocessing done on the data (used to normalize for training/evaluation). For example for the cube data run:
 
 `python scripts/data/calc_normalization_info.py --data_list ./data/sim/dataset_lists/Cube5k/all.txt --info_out ./data/sim/normalization_info/cube_5k.pkl`
 
