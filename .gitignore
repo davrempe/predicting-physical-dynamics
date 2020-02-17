@@ -8,3 +8,17 @@ data/sim/Mugs
 data/sim/Speakers
 data/sim/Trashcans
 pretrained/pointnet_cls*
+viz_unity/VizPredictions/Plugins
+viz_unity/VizPredictions/Assets/*.meta
+viz_unity/VizPredictions/Assets/*.rsp
+viz_unity/VizPredictions/Library
+viz_unity/VizPredictions/Logs
+viz_unity/VizPredictions/Packages
+viz_unity/VizPredictions/Temp
+viz_unity/VizPredictions/*.csproj
+viz_unity/VizPredictions/*.sln
+*.meta
+viz_unity/VizPredictions/obj
+viz_unity/VizPredictions/.vs
+viz_unity/VizPredictions/Builds
+viz_unity/VizPredictions/UnityPackageManager
