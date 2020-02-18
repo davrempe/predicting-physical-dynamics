@@ -1,6 +1,6 @@
 ## Data
 
-All simulated data used in the paper can be downloaded from [here](https://drive.google.com/open?id=197JIPbeJFtNzG75SDnUeWf6euiXdRojt). After unzipping, all contained data directories should be placed directly in the `sim` directory. There is one directory for each object category which contains simulation splits for that category. 
+All simulated data used in the paper can be downloaded from [here][1] (1 GB). After unzipping, all contained data directories should be placed directly in the `sim` directory. There is one directory for each object category which contains simulation splits for that category. 
 
 ### Data Structure
 The files in `dataset_lists` point to which data to load for each corresponding dataset, including the _Combined_ data which combines all simulations from all object categories together. A dataset list must be given as input to the training and test script. 
@@ -24,3 +24,5 @@ For testing, the flags determine which evaluations are performed:
 * `--output_pred` will save the predicted sequences to .json files which can later be visualized with Unity as [explained in the README](https://github.com/davrempe/predicting-physical-dynamics).
 
 Please see the main paper for a description of each of the metrics.
+
+[1]: http://download.cs.stanford.edu/orion/predicting_physical_dynamics/SimData.zip
