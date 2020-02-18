@@ -15,9 +15,9 @@ This code has been tested on Ubuntu 16.04 using Python 2.7 and Tensorflow 1.13.1
 
 ### Downloads
 In order to run the code, you must download and place a few things in the repo:
-* **All simulated data** can be downloaded from [here](https://drive.google.com/open?id=197JIPbeJFtNzG75SDnUeWf6euiXdRojt). After unzipping, all data directories should be placed in `data/sim/`. For more information on data see [the readme](data).
-* Pre-trained PointNet weights that we use to initialize training can be downloaded [here](https://drive.google.com/file/d/1R8EK4EMlEGM6hMn5U9v17mheP52mTzeD/view?usp=sharing) and should be placed in the `pretrained` directory. 
-* If you want to visualize results, you will need to download the shape meshes [here](https://drive.google.com/open?id=1YWrgi6Uw7G0jqVu36BvJETjWcXGe0DaM). They should be placed in `viz_unity/DataIn`.
+* **All simulated data** can be downloaded from [here][2] (1 GB). After unzipping, all data directories should be placed in `data/sim/`. For more information on data see [the readme](data).
+* Pre-trained PointNet weights that we use to initialize training can be downloaded [here][1] (43 MB) and should be placed in the `pretrained` directory. 
+* If you want to visualize results, you will need to download the shape meshes [here][3] (20 MB). They should be placed in `viz_unity/DataIn`.
 
 ## Structure
 The important parts of this repository are as follows:
@@ -46,7 +46,7 @@ If running into issues with pickle, you may need to regenerate some preprocessin
 `python scripts/data/calc_normalization_info.py --data_list ./data/sim/dataset_lists/Cube5k/all.txt --info_out ./data/sim/normalization_info/cube_5k.pkl`
 
 ### Visualization
-For visualizing predicted trajectories, we use the [Unity game engine](https://unity.com/). We have tested our Unity project on version 2017.3.1f1 on Windows 10, but it is a small project and should work in other versions. The visualization is meant to be run on output predictions from the test script using the `--output_pred` flag. To visualize results, place the [required meshes](https://drive.google.com/open?id=1YWrgi6Uw7G0jqVu36BvJETjWcXGe0DaM) in `viz_unity/DataIn`.
+For visualizing predicted trajectories, we use the [Unity game engine](https://unity.com/). We have tested our Unity project on version 2017.3.1f1 on Windows 10, but it is a small project and should work in other versions. The visualization is meant to be run on output predictions from the test script using the `--output_pred` flag. To visualize results, place the [required meshes][3] in `viz_unity/DataIn`.
 
 After installing Unity, open the project (with base directory at `viz_unity/VizPredictions`) and in the editor double-click to open `Scenes/TumbleVizPred`. To run the visualization script:
 * Click the `PredictionVisualizer` object in the Hierarchy panel to view all options for visualization in the Inspector panel.
@@ -70,3 +70,6 @@ If you use this code, please cite our work:
 	year={2020}
 }
 ```
+[1]: http://download.cs.stanford.edu/orion/predicting_physical_dynamics/pretrained_pointnet.zip
+[2]: http://download.cs.stanford.edu/orion/predicting_physical_dynamics/SimData.zip
+[3]: http://download.cs.stanford.edu/orion/predicting_physical_dynamics/VizShapes.zip
