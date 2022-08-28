@@ -15,12 +15,12 @@ This code has been tested on Ubuntu 16.04 using Python 2.7 and Tensorflow 1.13.1
 
 ### Downloads
 In order to run the code, you must download and place a few things in the repo:
-* **All simulated data** can be downloaded from [here][2] (1 GB). After unzipping, all data directories should be placed in `data/sim/`. For more information on data see [the readme](data).
-* Pre-trained PointNet weights that we use to initialize training can be downloaded [here][1] (43 MB) and should be placed in the `pretrained` directory. 
-* If you want to visualize results, you will need to download the shape meshes [here][3] (20 MB). They should be placed in `viz_unity/DataIn`.
+* **All simulated data** can be downloaded by running `wget http://download.cs.stanford.edu/orion/predicting_physical_dynamics/SimData.zip` (1 GB). After unzipping, all data directories should be placed in `data/sim/`. For more information on data see [the readme](data).
+* Pre-trained PointNet weights that we use to initialize training can be downloaded by running `wget http://download.cs.stanford.edu/orion/predicting_physical_dynamics/pretrained_pointnet.zip` (43 MB) and should be placed in the `pretrained` directory. 
+* If you want to visualize results, you will need to download the shape meshes by running `wget http://download.cs.stanford.edu/orion/predicting_physical_dynamics/VizShapes.zip` (20 MB). They should be placed in `viz_unity/DataIn`.
 
 ## Structure
-The important parts of this repository are as follows:
+The important parts of this repository are as follows:http://download.cs.stanford.edu/orion/predicting_physical_dynamics/pretrained_pointnet.zip[1]
 * `data` is where simulated data for training/testing should be placed. Additionally, it already contains all configuration files needed to properly load and use the dataset. Please see the [data readme](data) for more information.
 * `scripts` contains all code pertaining to our method including training and testing scripts and models. See below for instructions to run these scripts.
 * `viz_unity` contains a [Unity3D](https://unity.com/) project that can be used to visualize results. See below for instructions to use this project.
@@ -46,7 +46,7 @@ If running into issues with pickle, you may need to regenerate some preprocessin
 `python scripts/data/calc_normalization_info.py --data_list ./data/sim/dataset_lists/Cube5k/all.txt --info_out ./data/sim/normalization_info/cube_5k.pkl`
 
 ### Visualization
-For visualizing predicted trajectories, we use the [Unity game engine](https://unity.com/). We have tested our Unity project on version 2017.3.1f1 on Windows 10, but it is a small project and should work in other versions. The visualization is meant to be run on output predictions from the test script using the `--output_pred` flag. To visualize results, place the [required meshes][3] in `viz_unity/DataIn`.
+For visualizing predicted trajectories, we use the [Unity game engine](https://unity.com/). We have tested our Unity project on version 2017.3.1f1 on Windows 10, but it is a small project and should work in other versions. The visualization is meant to be run on output predictions from the test script using the `--output_pred` flag. To visualize results, place the required meshes mentioned earlier in `viz_unity/DataIn`.
 
 After installing Unity, open the project (with base directory at `viz_unity/VizPredictions`) and in the editor double-click to open `Scenes/TumbleVizPred`. To run the visualization script:
 * Click the `PredictionVisualizer` object in the Hierarchy panel to view all options for visualization in the Inspector panel.
@@ -70,6 +70,3 @@ If you use this code, please cite our work:
 	year={2020}
 }
 ```
-[1]: http://download.cs.stanford.edu/orion/predicting_physical_dynamics/pretrained_pointnet.zip
-[2]: http://download.cs.stanford.edu/orion/predicting_physical_dynamics/SimData.zip
-[3]: http://download.cs.stanford.edu/orion/predicting_physical_dynamics/VizShapes.zip
