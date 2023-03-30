@@ -20,7 +20,7 @@ In order to run the code, you must download and place a few things in the repo:
 * If you want to visualize results, you will need to download the shape meshes by running `wget http://download.cs.stanford.edu/orion/predicting_physical_dynamics/VizShapes.zip` (20 MB). They should be placed in `viz_unity/DataIn`.
 
 ## Structure
-The important parts of this repository are as follows:http://download.cs.stanford.edu/orion/predicting_physical_dynamics/pretrained_pointnet.zip[1]
+The important parts of this repository are as follows:
 * `data` is where simulated data for training/testing should be placed. Additionally, it already contains all configuration files needed to properly load and use the dataset. Please see the [data readme](data) for more information.
 * `scripts` contains all code pertaining to our method including training and testing scripts and models. See below for instructions to run these scripts.
 * `viz_unity` contains a [Unity3D](https://unity.com/) project that can be used to visualize results. See below for instructions to use this project.
